@@ -4,6 +4,12 @@ var plugins = [{
     },{
       plugin: require('D:/Documents/GitHub/gatsby/learning-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('D:/Documents/GitHub/gatsby/learning-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"The Project","short_name":"The Project","start_url":"/","background_color":"#ffffff","theme_color":"#ffffff","display":"standalone","icon":"static/icon.png"},
+    },{
+      plugin: require('D:/Documents/GitHub/gatsby/learning-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
